@@ -4,7 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
-import { CustomCursor } from '@/components/CustomCursor';
+// import { CustomCursor } from '@/components/CustomCursor';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { PageLoader } from '@/components/PageLoader';
 import { PageTransition } from '@/components/PageTransition';
@@ -24,7 +24,7 @@ function AppContent() {
 
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <ScrollToTop />
       <JsonLd />
       <Header />
