@@ -1,0 +1,42 @@
+export const images = {
+  hero: [
+    'https://images.pexels.com/photos/39829289/pexels-photo-39829289.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    'https://images.pexels.com/photos/28853362/pexels-photo-28853362.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    'https://images.pexels.com/photos/34377945/pexels-photo-34377945.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    'https://images.pexels.com/photos/27164969/pexels-photo-27164969.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    'https://images.pexels.com/photos/39829265/pexels-photo-39829265.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  ],
+  livingRoom: {
+    wide: 'https://images.pexels.com/photos/28853362/pexels-photo-28853362.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    tall: 'https://images.pexels.com/photos/27164969/pexels-photo-27164969.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  },
+  dining: 'https://images.pexels.com/photos/39829289/pexels-photo-39829289.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  kitchen: 'https://images.pexels.com/photos/6903160/pexels-photo-6903160.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  bedroom: {
+    wide: 'https://images.pexels.com/photos/39759238/pexels-photo-39759238.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    tall: 'https://images.pexels.com/photos/13722860/pexels-photo-13722860.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  },
+  bathroom: 'https://images.pexels.com/photos/7722165/pexels-photo-7722165.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  staircase: 'https://images.pexels.com/photos/15758636/pexels-photo-15758636.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  feature: 'https://images.pexels.com/photos/35189746/pexels-photo-35189746.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  darkSection: 'https://images.pexels.com/photos/28254549/pexels-photo-28254549.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  marqueeKitchen: 'https://images.pexels.com/photos/8146212/pexels-photo-8146212.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  marqueeDining: 'https://images.pexels.com/photos/27164978/pexels-photo-27164978.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  marqueeStair: 'https://images.pexels.com/photos/18517955/pexels-photo-18517955.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  marqueeBath: 'https://images.pexels.com/photos/8146153/pexels-photo-8146153.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  marqueeBed: 'https://images.pexels.com/photos/13722944/pexels-photo-13722944.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  instagram: [
+    'https://images.pexels.com/photos/39829289/pexels-photo-39829289.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/6903160/pexels-photo-6903160.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/39759238/pexels-photo-39759238.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/7722165/pexels-photo-7722165.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/27164978/pexels-photo-27164978.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/18517955/pexels-photo-18517955.jpeg?auto=compress&cs=tinysrgb&w=600',
+  ],
+  team: {
+    founder: 'https://images.pexels.com/photos/5292201/pexels-photo-5292201.jpeg?auto=compress&cs=tinysrgb&w=800',
+    member2: 'https://images.pexels.com/photos/5292233/pexels-photo-5292233.jpeg?auto=compress&cs=tinysrgb&w=800',
+    member3: 'https://images.pexels.com/photos/5292204/pexels-photo-5292204.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  contact: 'https://images.pexels.com/photos/6782568/pexels-photo-6782568.jpeg?auto=compress&cs=tinysrgb&w=1200',
+};

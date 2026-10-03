@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Manrope:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F3EFE8;
+    color: #1C1B19;
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #A8865B;
+    color: #F6F3EE;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #A8865B;
+    outline-offset: 3px;
+  }
+
+  /* Hide default cursor on desktop for custom cursor */
+  @media (hover: hover) and (pointer: fine) {
+    body.custom-cursor-active,
+  body.custom-cursor-active * {
+      cursor: none !important;
+    }
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #6F6A62;
+  }
+
+  .heading-serif {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Ken Burns animation for hero slideshow */
+@keyframes kenburns {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.kenburns {
+  animation: kenburns 8s ease-out forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .kenburns {
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+
+:root {
+  --canvas: #F3EFE8;
+  --canvas-2: #EAE4DA;
+  --ink: #181714;
+  --muted: #716B63;
+  --hairline: #D7D0C6;
+  --bronze: #A17C50;
+  --display: 'Bodoni Moda', serif;
+  --body: 'Manrope', sans-serif;
+  --max: 1680px;
+}
+
+body {
+  letter-spacing: -0.01em;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #181714;
+  color: #F3EFE8;
+}
+
+.site-wordmark {
+  display: inline-flex;
+  align-items: center;
+  color: #181714;
+  font-family: var(--body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: color 350ms ease;
+  white-space: nowrap;
+}
+
+.site-wordmark--light {
+  color: #F3EFE8;
+}
+
+.nav-link {
+  position: relative;
+  color: #716B63;
+  font-family: var(--body);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.17em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: color 300ms ease;
+}
+
+.nav-link::after {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after,
+.nav-link--active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-link:hover,
+.nav-link--active {
+  color: #181714;
+}
+
+.nav-link--light {
+  color: rgba(243, 239, 232, 0.78);
+}
+
+.nav-link--light:hover,
+.nav-link--light.nav-link--active {
+  color: #F3EFE8;
+}
+
+.nav-link--cta {
+  color: #A17C50;
+  margin-left: 0.75rem;
+}
+
+.menu-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #181714;
+}
+
+.menu-trigger--light {
+  color: #F3EFE8;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  color: #181714;
+  font-family: var(--display);
+  font-size: clamp(2rem, 8vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  color: #7A7268;
+  font-family: var(--body);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.heading-serif,
+.font-serif {
+  font-family: var(--display);
+}
+
+.section-rule {
+  border-top: 1px solid var(--hairline);
+}
+
+.editorial-kicker {
+  color: rgba(243, 239, 232, 0.62);
+  font-family: var(--body);
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.editorial-index {
+  color: var(--bronze);
+  font-family: var(--display);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+@media (max-width: 1023px) {
+  .nav-link {
+    font-size: 0.6rem;
+  }
+}
