@@ -45,10 +45,6 @@ export function Header() {
     const hero = document.querySelector('[data-hero]');
     heroRef.current = hero;
 
-    if (!hero) {
-      setHeroVisible(false);
-      return;
-    }
 
     const observer = new IntersectionObserver(
       ([entry]) => setHeroVisible(entry.isIntersecting),
@@ -77,34 +73,40 @@ export function Header() {
             className={`site-wordmark ${isExpanded ? 'site-wordmark--light' : ''}`}
             aria-label="Manhhattan Studios home"
           >
+            <img
+              src="/images/manhattan-monogram.png"
+              alt="Manhattan Studios"
+              className={`h-12 w-12 object-contain transition-all duration-500 md:h-14 md:w-14 ${isExpanded ? 'brightness-0 invert' : ''}`}
+            />
             MANHHATTAN STUDIOS
           </Link>
 
           <AnimatePresence initial={false}>
-            {isExpanded && (
-              <motion.nav
-                key="desktop-nav"
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.32, ease: easePremium }}
-                className="hidden items-center gap-8 lg:flex"
-              >
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.to}
-                    to={link.to}
-                    className={`nav-link ${location.pathname === link.to ? 'nav-link--active' : ''
-                      } ${isExpanded ? 'nav-link--light' : ''}`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-                <Link to="/contact" className={`nav-link nav-link--cta ${isExpanded ? 'nav-link--light' : ''}`}>
-                  Start a project
+            <motion.nav
+              key="desktop-nav"
+              style={{
+                backgroundColor: isExpanded ? 'rgba(0,0,0,0)' : '#F3EFE8',
+              }}
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.32, ease: easePremium }}
+              className="hidden items-center gap-8 lg:flex"
+            >
+              {navLinks.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`nav-link ${location.pathname === link.to ? 'nav-link--active' : ''
+                    } ${isExpanded ? 'nav-link--light' : ''}`}
+                >
+                  {link.label}
                 </Link>
-              </motion.nav>
-            )}
+              ))}
+              <Link to="/contact" className={`nav-link nav-link--cta ${isExpanded ? 'nav-link--light' : ''}`}>
+                Start a project
+              </Link>
+            </motion.nav>
           </AnimatePresence>
 
           <button
