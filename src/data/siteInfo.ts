@@ -5,7 +5,7 @@ export const siteInfo = {
   whatsappNumber: '9198XXXXXXXX',
   whatsappMessage:
     "Hi Manhattan Studios, I'd like to know more about your services.",
-  email: 'studio@manhattanstudios.in',
+  email: 'studio@manhattanstudio.in',
   instagram: 'https://www.instagram.com/manhhattanstudio/',
   instagramHandle: '@manhhattanstudio',
   address: {

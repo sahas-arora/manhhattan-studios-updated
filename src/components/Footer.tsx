@@ -103,7 +103,7 @@ export function Footer() {
               ))}
             </nav>
             <p className="text-xs text-dark-text/40">
-              © 2026 Manhhattan Studios. All rights reserved.
+              © 2026 Manhhattan Studio. All rights reserved.
             </p>
           </div>
         </div>

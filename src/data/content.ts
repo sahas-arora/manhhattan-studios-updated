@@ -7,7 +7,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      'We had been through two designers before we found Manhhattan Studios. The difference was not just in the design — it was in the clarity. They told us what would work and what would not, and they were right about almost everything.',
+      'We had been through two designers before we found Manhhattan Studio. The difference was not just in the design — it was in the clarity. They told us what would work and what would not, and they were right about almost everything.',
     name: 'A. Mehta',
     locality: 'DLF Phase 5, Gurugram',
   },
