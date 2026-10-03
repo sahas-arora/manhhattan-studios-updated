@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -15,18 +15,13 @@ const easePremium = [0.22, 1, 0.36, 1] as const;
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [heroVisible, setHeroVisible] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const heroRef = useRef<Element | null>(null);
   const isHome = location.pathname === '/';
-  const isExpanded = isHome && heroVisible && !menuOpen;
+  const isExpanded = isHome && !scrolled && !menuOpen;
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
     return () => {
       document.body.style.overflow = '';
     };
@@ -36,24 +31,14 @@ export function Header() {
     setMenuOpen(false);
   }, [location.pathname]);
 
+  // Collapse as soon as the user scrolls; expanded again at the top
   useEffect(() => {
-    if (!isHome) {
-      setHeroVisible(false);
-      return;
-    }
+    const onScroll = () => setScrolled(window.scrollY > 8);
 
-    const hero = document.querySelector('[data-hero]');
-    heroRef.current = hero;
-
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setHeroVisible(entry.isIntersecting),
-      { threshold: 0.02 }
-    );
-
-    observer.observe(hero);
-    return () => observer.disconnect();
-  }, [isHome]);
+    onScroll(); // sync on mount and on route change
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [location.pathname]);
 
   return (
     <>
@@ -76,38 +61,36 @@ export function Header() {
             <img
               src="/images/manhattan-monogram.png"
               alt="Manhattan Studios"
-              className={`h-12 w-12 object-contain transition-all duration-500 md:h-14 md:w-14 ${isExpanded ? 'brightness-0 invert' : ''}`}
+              className={`h-12 w-12 object-contain transition-all duration-500 md:h-14 md:w-14 ${isExpanded ? 'brightness-0 invert' : ''
+                }`}
             />
             MANHHATTAN STUDIOS
           </Link>
 
-          <AnimatePresence initial={false}>
-            <motion.nav
-              key="desktop-nav"
-              style={{
-                backgroundColor: isExpanded ? 'rgba(0,0,0,0)' : '#F3EFE8',
-              }}
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.32, ease: easePremium }}
-              className="hidden items-center gap-8 lg:flex"
-            >
-              {navLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`nav-link ${location.pathname === link.to ? 'nav-link--active' : ''
-                    } ${isExpanded ? 'nav-link--light' : ''}`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <Link to="/contact" className={`nav-link nav-link--cta ${isExpanded ? 'nav-link--light' : ''}`}>
-                Start a project
+          <motion.nav
+            key="desktop-nav"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.32, ease: easePremium }}
+            className="hidden items-center gap-8 lg:flex"
+          >
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`nav-link ${location.pathname === link.to ? 'nav-link--active' : ''
+                  } ${isExpanded ? 'nav-link--light' : ''}`}
+              >
+                {link.label}
               </Link>
-            </motion.nav>
-          </AnimatePresence>
+            ))}
+            <Link
+              to="/contact"
+              className={`nav-link nav-link--cta ${isExpanded ? 'nav-link--light' : ''}`}
+            >
+              Start a project
+            </Link>
+          </motion.nav>
 
           <button
             onClick={() => setMenuOpen(true)}
@@ -132,7 +115,11 @@ export function Header() {
               <Link to="/" className="site-wordmark" onClick={() => setMenuOpen(false)}>
                 MANHHATTAN STUDIOS
               </Link>
-              <button onClick={() => setMenuOpen(false)} className="text-ink" aria-label="Close menu">
+              <button
+                onClick={() => setMenuOpen(false)}
+                className="text-ink"
+                aria-label="Close menu"
+              >
                 <X className="h-5 w-5" strokeWidth={1.4} />
               </button>
             </div>
