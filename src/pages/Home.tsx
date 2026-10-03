@@ -61,18 +61,19 @@ function HeroSlideshow() {
       <div className="relative z-10 flex h-full flex-col justify-center px-6 md:px-10">
         <div className="mx-auto max-w-[1600px] w-full">
           <motion.h1
-            className="max-w-4xl font-serif font-light text-canvas text-balance"
-            style={{ fontSize: 'clamp(2.25rem, 6vw, 5rem)', lineHeight: 1.05 }}
+            className=" font-serif font-light text-canvas text-balance"
+            style={{ fontSize: 'clamp(2.25rem, 6vw, 5rem)', lineHeight: 1.05, textAlign: 'center' }}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.4, ease: easePremium }}
           >
             Luxury interiors,{' '}
-            <span className="italic">designed and delivered as one.</span>
+            designed and delivered as one.
           </motion.h1>
 
           <motion.p
-            className="mt-8 max-w-xl text-base font-light leading-relaxed text-canvas/70"
+            className="mt-8 text-base leading-relaxed text-canvas/100"
+            style={{ fontSize: 'clamp(1.25rem, 3vw, 0.75rem)', textAlign: "center" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.7, ease: easePremium }}
@@ -81,7 +82,7 @@ function HeroSlideshow() {
             Delhi NCR &amp; Gurugram.
           </motion.p>
 
-          <motion.div
+          {/* <motion.div
             className="mt-10 flex flex-wrap items-center gap-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -96,7 +97,7 @@ function HeroSlideshow() {
             >
               Start a Conversation
             </Link>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 
