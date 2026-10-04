@@ -2,7 +2,7 @@ export const siteInfo = {
   name: 'Manhhattan Studio',
   tagline: 'Luxury Residential Interiors',
   phone: '+91 98110 66070',
-  whatsappNumber: '9198XXXXXXXX',
+  whatsappNumber: '919811066070',
   whatsappMessage:
     "Hi Manhhattan Studio, I'd like to know more about your services.",
   email: 'studio@manhhattanstudio.in',
