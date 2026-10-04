@@ -86,8 +86,7 @@ export default function Contact() {
   };
 
   const inputClass = (hasError?: string) =>
-    `w-full border-b pb-3 pt-2 bg-transparent text-sm text-ink placeholder:text-muted/50 transition-colors duration-300 focus:outline-none ${
-      hasError ? 'border-red-400' : 'border-hairline focus:border-bronze'
+    `w-full border-b pb-3 pt-2 bg-transparent text-sm text-ink placeholder:text-muted/50 transition-colors duration-300 focus:outline-none ${hasError ? 'border-red-400' : 'border-hairline focus:border-bronze'
     }`;
 
   const labelClass = 'eyebrow mb-3 block';
@@ -95,8 +94,8 @@ export default function Contact() {
   return (
     <>
       <Seo
-        title="Contact — Manhattan Studios | Start a Project in Gurugram"
-        description="Get in touch with Manhattan Studios to discuss your residential interior project in Delhi NCR or Gurugram. By appointment only."
+        title="Contact — Manhhattan Studio | Start a Project in Gurugram"
+        description="Get in touch with Manhhattan Studio to discuss your residential interior project in Delhi NCR or Gurugram. By appointment only."
         path="/contact"
       />
 
@@ -273,7 +272,7 @@ export default function Contact() {
                             value={data.phone}
                             onChange={(e) => update('phone', e.target.value)}
                             className={inputClass(errors.phone)}
-                            placeholder="+91 98XXX XXXXX"
+                            placeholder="+91 98110 66070"
                             aria-invalid={!!errors.phone}
                           />
                           {errors.phone && (

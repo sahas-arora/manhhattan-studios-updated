@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { Seo } from '@/components/Seo';
 import { RevealImage, ParallaxImage, Reveal } from '@/components/Reveal';
 import { getProject, getNextProject } from '@/data/projects';
-import { TextLink } from '@/components/Button';
+// import { TextLink } from '@/components/Button';
 
 const easePremium = [0.22, 1, 0.36, 1] as const;
 
@@ -29,7 +29,7 @@ export default function ProjectDetail() {
   return (
     <>
       <Seo
-        title={`${project.title} — Manhattan Studios | ${project.location}`}
+        title={`${project.title} — Manhhattan Studio | ${project.location}`}
         description={`${project.title}: ${project.typology}. ${project.brief.substring(0, 140)}...`}
         path={`/projects/${project.slug}`}
         image={project.cover}

@@ -56,15 +56,15 @@ export function Header() {
           <Link
             to="/"
             className={`site-wordmark ${isExpanded ? 'site-wordmark--light' : ''}`}
-            aria-label="Manhhattan Studios home"
+            aria-label="Manhhattan Studio home"
           >
             <img
-              src="/images/manhattan-monogram.png"
-              alt="Manhattan Studios"
+              src="/images/manhhattan-monogram.png"
+              alt="Manhhattan Studio"
               className={`h-12 w-12 object-contain transition-all duration-500 md:h-14 md:w-14 ${isExpanded ? 'brightness-0 invert' : ''
                 }`}
             />
-            MANHHATTAN STUDIOS
+            MANHHATTAN STUDIO
           </Link>
 
           <motion.nav
@@ -113,7 +113,7 @@ export function Header() {
           >
             <div className="flex items-center justify-between px-6 py-5">
               <Link to="/" className="site-wordmark" onClick={() => setMenuOpen(false)}>
-                MANHHATTAN STUDIOS
+                MANHHATTAN STUDIO
               </Link>
               <button
                 onClick={() => setMenuOpen(false)}

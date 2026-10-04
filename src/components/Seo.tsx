@@ -10,7 +10,7 @@ interface SeoProps {
 
 export function Seo({ title, description, path, image }: SeoProps) {
   const url = `https://manhhattanstudio.in${path}`;
-  const ogImage = image || 'https://bolt.new/static/og_default.png';
+  const ogImage = image || 'https://manhattanstudio.in/MS_Home_Preview.jpg';
 
   return (
     <Helmet>
@@ -45,7 +45,7 @@ export function JsonLd() {
     },
     telephone: siteInfo.phone,
     email: siteInfo.email,
-    url: 'https://manhattanstudio.in',
+    url: 'https://manhhattanstudio.in',
     sameAs: [siteInfo.instagram],
     areaServed: 'Delhi NCR, Gurugram',
     foundingDate: String(siteInfo.founded),
