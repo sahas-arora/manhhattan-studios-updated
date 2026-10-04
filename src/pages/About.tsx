@@ -13,8 +13,8 @@ export default function About() {
   return (
     <>
       <Seo
-        title="About — Manhattan Studios | Interior Design Studio in Gurugram"
-        description="Manhattan Studios is a luxury residential interior design studio based in Gurugram, serving Delhi NCR. Meet the team and learn the philosophy behind our turnkey approach."
+        title="About — Manhhattan Studio | Interior Design Studio in Gurugram"
+        description="Manhhattan Studio is a luxury residential interior design studio based in Gurugram, serving Delhi NCR. Meet the team and learn the philosophy behind our turnkey approach."
         path="/about"
       />
 
@@ -39,7 +39,7 @@ export default function About() {
             <div className="lg:col-span-7">
               <Reveal delay={0.2}>
                 <p className="text-sm leading-relaxed text-muted">
-                  Manhattan Studios was founded in {siteInfo.founded} with a
+                  Manhhattan Studio was founded in {siteInfo.founded} with a
                   simple conviction: that the best interiors are the ones you do
                   not notice at first. Based in Gurugram, we design and deliver
                   luxury residential interiors across Delhi NCR — from compact

@@ -652,8 +652,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Manhhattan Studios — Luxury Residential Interiors | Delhi NCR & Gurugram"
-        description="Manhhattan Studios designs and delivers luxury residential interiors across Delhi NCR and Gurugram. Turnkey solutions, modern styling, and bespoke homes — one team, one accountability."
+        title="Manhhattan Studio — Luxury Residential Interiors | Delhi NCR & Gurugram"
+        description="Manhhattan Studio designs and delivers luxury residential interiors across Delhi NCR and Gurugram. Turnkey solutions, modern styling, and bespoke homes — one team, one accountability."
         path="/"
       />
       <HeroSlideshow />

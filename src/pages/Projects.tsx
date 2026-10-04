@@ -19,8 +19,8 @@ export default function Projects() {
   return (
     <>
       <Seo
-        title="Projects — Manhhattan Studios | Luxury Interiors in Gurugram"
-        description="Explore selected residential interior projects by Manhhattan Studios across Gurugram and Delhi NCR — penthouses, villas, apartments and styling commissions."
+        title="Projects — Manhhattan Studio | Luxury Interiors in Gurugram"
+        description="Explore selected residential interior projects by Manhhattan Studio across Gurugram and Delhi NCR — penthouses, villas, apartments and styling commissions."
         path="/projects"
       />
 

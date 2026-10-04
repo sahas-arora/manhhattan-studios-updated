@@ -101,24 +101,24 @@ export interface TeamMember {
 
 export const team: TeamMember[] = [
   {
-    name: '[Founder Name]',
+    name: 'Sabina Arora',
     role: 'Principal Designer & Founder',
-    bio: 'After a decade in architecture practices in Mumbai and London, [Founder] returned to Gurugram to build a studio that designs homes the way they should be — with restraint, accountability and an obsessive attention to material.',
+    bio: "Sabina Arora's journey into interior design began unexpectedly, with a home of her own that became her first project. What started as a personal endeavour soon grew into a deeper appreciation for the art of shaping spaces. Working alongside celebrated designers Nikhil Varma and Monica Chawla, she found herself drawn to the nuances of interior and furniture design. After a stint at Essentia, she went on to establish her own studio in 2019, bringing with her an instinctive approach to design, shaped by curiosity, collaboration, and a love for thoughtful living.",
     image:
       'https://images.pexels.com/photos/5292201/pexels-photo-5292201.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
-    name: '[Lead Designer Name]',
+    name: 'Anju',
     role: 'Senior Interior Designer',
-    bio: 'A graduate of CEPT University, [Name] leads the design development phase, translating concepts into precise, buildable drawings with a particular sensitivity to lighting and spatial flow.',
+    bio: 'A graduate of CEPT University, Anju leads the design development phase, translating concepts into precise, buildable drawings with a particular sensitivity to lighting and spatial flow.',
     image:
       'https://images.pexels.com/photos/5292233/pexels-photo-5292233.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
-  {
-    name: '[Project Lead Name]',
-    role: 'Head of Execution',
-    bio: 'With fifteen years on site across Delhi NCR, [Name] runs the turnkey execution arm — the discipline that turns our drawings into finished homes, on time and to specification.',
-    image:
-      'https://images.pexels.com/photos/5292204/pexels-photo-5292204.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
+  // {
+  //   name: '[Project Lead Name]',
+  //   role: 'Head of Execution',
+  //   bio: 'With fifteen years on site across Delhi NCR, [Name] runs the turnkey execution arm — the discipline that turns our drawings into finished homes, on time and to specification.',
+  //   image:
+  //     'https://images.pexels.com/photos/5292204/pexels-photo-5292204.jpeg?auto=compress&cs=tinysrgb&w=800',
+  // },
 ];

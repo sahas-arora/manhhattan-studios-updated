@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Seo } from '@/components/Seo';
 import { SectionHeading } from '@/components/SectionHeading';
-import { Reveal, ParallaxImage, RevealImage } from '@/components/Reveal';
+import { Reveal, ParallaxImage } from '@/components/Reveal';
 import { Button } from '@/components/Button';
 import { Accordion } from '@/components/Accordion';
 import { services, faqs } from '@/data/services';
@@ -12,8 +12,8 @@ export default function Services() {
   return (
     <>
       <Seo
-        title="Services — Manhattan Studios | Interior Design, Turnkey & Styling"
-        description="Luxury residential interiors, turnkey solutions, and modern home styling by Manhattan Studios in Gurugram and Delhi NCR. One team from design to handover."
+        title="Services — Manhahttan Studio | Interior Design, Turnkey & Styling"
+        description="Luxury residential interiors, turnkey solutions, and modern home styling by Manhhattan Studio in Gurugram and Delhi NCR. One team from design to handover."
         path="/services"
       />
 

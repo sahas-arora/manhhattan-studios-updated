@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Seo } from '@/components/Seo';
 import { SectionHeading } from '@/components/SectionHeading';
 import { Reveal } from '@/components/Reveal';
-import { TextLink } from '@/components/Button';
+// import { TextLink } from '@/components/Button';
 
 const journalEntries = [
   {
@@ -32,8 +32,8 @@ export default function Journal() {
   return (
     <>
       <Seo
-        title="Journal — Manhattan Studios | Design Notes & Thinking"
-        description="Notes on materials, process and residential interior design from Manhattan Studios, a luxury interior design studio in Gurugram."
+        title="Journal — Manhhattan Studio | Design Notes & Thinking"
+        description="Notes on materials, process and residential interior design from Manhhattan Studio, a luxury interior design studio in Gurugram."
         path="/journal"
       />
 

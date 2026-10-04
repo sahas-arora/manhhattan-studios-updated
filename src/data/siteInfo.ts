@@ -1,20 +1,20 @@
 export const siteInfo = {
-  name: 'Manhattan Studios',
+  name: 'Manhhattan Studio',
   tagline: 'Luxury Residential Interiors',
-  phone: '+91 98XXX XXXXX',
+  phone: '+91 98110 66070',
   whatsappNumber: '9198XXXXXXXX',
   whatsappMessage:
-    "Hi Manhattan Studios, I'd like to know more about your services.",
-  email: 'studio@manhattanstudio.in',
+    "Hi Manhhattan Studio, I'd like to know more about your services.",
+  email: 'studio@manhhattanstudio.in',
   instagram: 'https://www.instagram.com/manhhattanstudio/',
   instagramHandle: '@manhhattanstudio',
   address: {
-    line1: '[Studio address]',
+    line1: 'A 48/42, DLF Phase 1',
     line2: 'Gurugram, Haryana',
     region: 'Delhi NCR',
     note: 'By appointment only',
   },
-  founded: 2014,
+  founded: 2019,
   stats: {
     homes: '120',
     years: '11',
