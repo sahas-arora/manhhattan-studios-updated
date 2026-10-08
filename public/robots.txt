@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://manhhattanstudio.in/sitemap.xml
+Sitemap: https://manhhattanstudios.in/sitemap.xml

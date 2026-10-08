@@ -110,7 +110,7 @@ export const team: TeamMember[] = [
   {
     name: 'Anju',
     role: 'Senior Interior Designer',
-    bio: 'A graduate of CEPT University, Anju leads the design development phase, translating concepts into precise, buildable drawings with a particular sensitivity to lighting and spatial flow.',
+    bio: 'Anju, an architect by training, brings over eight years of experience in architecture and interior design to Manhhattan Studio. Her journey with Sabina began at Essentia, where she was already working when Sabina joined the firm. Over the years, their shared approach to design and understanding of how spaces should be lived in naturally grew into a partnership. Together, they went on to build Manhhattan Studio, bringing architecture, interiors and a considered eye for detail into one practice.',
     image:
       'https://images.pexels.com/photos/5292233/pexels-photo-5292233.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
