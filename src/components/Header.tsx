@@ -7,7 +7,7 @@ const navLinks = [
   { label: 'Projects', to: '/projects' },
   { label: 'Services', to: '/services' },
   { label: 'About', to: '/about' },
-  { label: 'Journal', to: '/journal' },
+  // { label: 'Journal', to: '/journal' },
   { label: 'Contact', to: '/contact' },
 ];
 
@@ -59,7 +59,7 @@ export function Header() {
             aria-label="Manhhattan Studio home"
           >
             <img
-              src="/images/manhhattan-monogram.png"
+              src="/images/manhhattanStudiomonogram.png"
               alt="Manhhattan Studio"
               className={`h-12 w-12 object-contain transition-all duration-500 md:h-14 md:w-14 ${isExpanded ? 'brightness-0 invert' : ''
                 }`}

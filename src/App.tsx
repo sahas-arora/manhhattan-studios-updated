@@ -17,7 +17,7 @@ const ProjectDetail = lazy(() => import('@/pages/ProjectDetail'));
 const Services = lazy(() => import('@/pages/Services'));
 const About = lazy(() => import('@/pages/About'));
 const Contact = lazy(() => import('@/pages/Contact'));
-const Journal = lazy(() => import('@/pages/Journal'));
+// const Journal = lazy(() => import('@/pages/Journal'));
 
 function AppContent() {
   useLenis();
@@ -37,7 +37,7 @@ function AppContent() {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/journal" element={<Journal />} />
+            {/* <Route path="/journal" element={<Journal />} /> */}
           </Routes>
         </Suspense>
       </PageTransition>
